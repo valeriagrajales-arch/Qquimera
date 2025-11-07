@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QQUIMERA — Urban Techwear</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Oxanium:wght@700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="QQUIMERA.css">
+
+</head>
+<body>
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img class="brand-logo" src="img/nuevo logo.png" alt="QQUIMERA logo">
+        <span class="brand-title">QQUIMERA</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación">
+        <ul class="nav-list" id="navLinks">
+          <li><a href="#novedades">Nuevo</a></li>
+          <li><a href="#catalogo" data-filter="ropa">Ropa</a></li>
+          <li><a href="#catalogo" data-filter="pantalones">Pantalones</a></li>
+          <li><a href="#catalogo" data-filter="gorras">Gorras</a></li>
+          <li><a href="#catalogo" data-filter="accesorios">Accesorios</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="search-wrap">
+          <input id="searchInput" class="search-input" type="search" placeholder="Buscar...">
+          <button class="icon-btn" aria-label="Buscar">🔍</button>
+        </div>
+
+        <button id="btnLogin" class="btn ghost">Iniciar</button>
+        <button id="btnCartToggle" class="btn neon">Carrito <span id="cartCount">0</span></button>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="novedades" class="hero-full">
+    <div class="hero-grid container">
+      <div class="hero-info reveal">
+        <span class="eyebrow">NUEVOS LANZAMIENTOS</span>
+        <h1 class="hero-title">ARCHETYPE <span class="series">SERIES</span></h1>
+        <p class="hero-sub">Techwear urbano — cortes funcionales y apariencia brutal. Edición limitada.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary large" href="#catalogo">Ver colección</a>
+          <a class="btn outline" href="#">Lookbook</a>
+        </div>
+
+        <ul class="hero-features">
+          <li>Materiales técnicos</li>
+          <li>Cortes utilitarios</li>
+          <li>Edición limitada</li>
+        </ul>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="media-frame">
+          <img src="img/pantalon.png" alt="Archetype - Modelo A-2" class="media-main">
+          <div class="media-badges">
+            <span class="badge neon">NUEVO</span>
+            <span class="badge glow">Edición</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="featured container">
+    <h2 class="section-title reveal">DESTACADOS</h2>
+
+    <div class="featured-grid reveal">
+      <div class="product-card" data-id="pantalon-negro" data-name="Pantalón Cargo Negro" data-price="99900" data-img="img/pantalon cargo.png">
+        <img src="img/pantalon cargo.png" alt="Pantalón Cargo Negro">
+        <h3>Pantalón Cargo Negro</h3>
+        <p class="price">$99.900</p>
+        <button class="btn-neon add-to-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="product-card" data-id="pantalon-morado" data-name="Pantalón Cargo Morado" data-price="109900" data-img="img/pantalon cargo morado.png">
+        <img src="img/pantalon cargo morado.png" alt="Pantalón Cargo Morado">
+        <h3>Pantalón Cargo Morado</h3>
+        <p class="price">$109.900</p>
+        <button class="btn-neon add-to-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="product-card" data-id="camiseta-tech" data-name="Camiseta Techwear" data-price="85900" data-img="img/camisa.png">
+        <img src="img/camisa.png" alt="Camiseta Techwear">
+        <h3>Camiseta Techwear</h3>
+        <p class="price">$85.900</p>
+        <button class="btn-neon add-to-cart">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+
+<section class="catalog-section container" id="catalogo">
+  <h2 class="section-title reveal">CATÁLOGO COMPLETO</h2>
+
+  <div class="catalog-grid reveal">
+
+    <div class="product-card" data-id="gorra" data-name="Gorra Premium" data-price="45900" data-img="img/gorra.png">
+      <img src="img/gorra.png" alt="Gorra Premium">
+      <h3>Gorra Premium</h3>
+      <p class="price">$45.900</p>
+      <button class="btn-neon add-to-cart">Agregar al carrito</button>
+    </div>
+
+    <div class="product-card" data-id="chaqueta" data-name="Chaqueta Urban" data-price="129900" data-img="img/chaqueta.png">
+      <img src="img/chaqueta.png" alt="Chaqueta Urban">
+      <h3>Chaqueta Urban</h3>
+      <p class="price">$129.900</p>
+      <button class="btn-neon add-to-cart">Agregar al carrito</button>
+    </div>
+
+    <div class="product-card" data-id="hoodie-over" data-name="Hoodie Oversize" data-price="149900" data-img="img/hoodie.png">
+      <img src="img/hoodie.png" alt="Hoodie Oversize">
+      <h3>Hoodie Oversize</h3>
+      <p class="price">$149.900</p>
+      <button class="btn-neon add-to-cart">Agregar al carrito</button>
+    </div>
+
+    <div class="product-card" data-id="gorra-negra" data-name="Gorra Negra Minimal" data-price="39900" data-img="img/gorra negra.png">
+      <img src="img/gorra negra.png" alt="Gorra Negra Minimal">
+      <h3>Gorra Negra Minimal</h3>
+      <p class="price">$39.900</p>
+      <button class="btn-neon add-to-cart">Agregar al carrito</button>
+    </div>
+
+    
+
+    <div class="extra-products">
+
+      <div class="product-card" data-id="hoodie-blanco" data-name="Hoodie Blanco" data-price="149900" data-img="img/hoodie blanco.png">
+        <img src="img/hoodie blanco.png" alt="Hoodie Blanco">
+        <h3>Hoodie Blanco</h3>
+        <p class="price">$149.900</p>
+        <button class="btn-neon add-to-cart">Agregar al carrito</button>
+      </div>
+
+      <div class="product-card" data-id="bolso" data-name="Bolso Táctico" data-price="69900" data-img="img/bolso.png">
+        <img src="img/bolso.png" alt="Bolso Táctico">
+        <h3>Bolso Táctico</h3>
+        <p class="price">$69.900</p>
+        <button class="btn-neon add-to-cart">Agregar al carrito</button>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="toggle-catalog-btn" aria-expanded="false">Mostrar más</button>
+</section>
+
+
+   
+      <div class="extra-products">
+        <div class="product-card" data-id="gorra-negra" data-name="Gorra Negra" data-price="39900" data-img="img/gorra negra.png">
+          <img src="img/gorra negra.png" alt="Gorra Negra">
+          <h3>Gorra Negra</h3>
+          <p class="price">$39.900</p>
+          <button class="btn-neon add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card" data-id="hoodie" data-name="Hoodie Oversize" data-price="149900" data-img="img/hoodie.png">
+          <img src="img/hoodie.png" alt="Hoodie Oversize">
+          <h3>Hoodie Oversize</h3>
+          <p class="price">$149.900</p>
+          <button class="btn-neon add-to-cart">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+  
+  </section>
+
+
+<div class="reviews-grid">
+
+  <div id="reviewsList"></div>
+
+  <aside class="review-form">
+    <h3>Deja tu reseña</h3>
+    <form id="reviewForm">
+      <input id="reviewAuthor" placeholder="Tu nombre" required>
+      <textarea id="reviewText" rows="3" placeholder="Tu reseña" required></textarea>
+      <select id="reviewRating">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="1">★☆☆☆☆</option>
+      </select>
+      <div style="display:flex;gap:.6rem;">
+        <button class="btn neon" type="submit">Enviar</button>
+        <button class="btn ghost" type="button" id="clearReview">Limpiar</button>
+      </div>
+      <div id="reviewMsg" style="margin-top:.6rem;height:1.2rem;"></div>
+    </form>
+  </aside>
+</div>
+
+
+  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+    <div class="cart-inner">
+      <div class="cart-head">
+        <h3>Tu Carrito (<span id="cartCountAside">0</span>)</h3>
+        <button id="closeCart" class="btn outline">Cerrar</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="total">Total: <strong id="cartTotal">$0</strong></div>
+        <div style="display:flex;gap:.5rem;margin-top:.6rem;">
+          <button id="clearCart" class="btn outline">Vaciar</button>
+          <button id="checkoutBtn" class="btn primary">Pagar</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button id="closeProductModal" class="btn outline">X</button>
+      <div class="modal-body">
+        <img id="modalMainImg" src="" alt="">
+        <div>
+          <h3 id="modalTitle"></h3>
+          <p id="modalPrice"></p>
+          <p id="modalDesc"></p>
+          <div class="modal-actions">
+            <input id="modalQty" type="number" value="1" min="1">
+            <button id="modalAddToCart" class="btn neon">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="site-footer reveal">
+    <div class="container footer-grid">
+      <div><h4>Contáctanos</h4><p>soporte@qquimera.com</p></div>
+      <div><h4>Síguenos</h4><p>Instagram · TikTok · Facebook</p></div>
+      <div><h4>Entrega</h4><p>Envíos a todo el país</p></div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> QQUIMERA — Todos los derechos reservados.</div>
+  </footer>
+
+
+  <script src="QQUIMERA.js" defer></script>
+</body>
+</html>
